@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">ShopLogo</div>
+    <nav class="nav">
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to Our Shop</h1>
+    <p>Find the best deals on your favorite products!</p>
+    <button class="shop-now">Shop Now</button>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <div class="filter">
+      <label for="category">Category:</label>
+      <select id="category">
+        <option value="all">All</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="accessories">Accessories</option>
+      </select>
+    </div>
+    <div class="filter">
+      <label for="sort">Sort By:</label>
+      <select id="sort">
+        <option value="default">Default</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+      </select>
+    </div>
+    <div class="filter">
+      <label for="search">Search:</label>
+      <input type="text" id="search" placeholder="Search products">
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="products" id="products">
+    <div class="product-grid">
+      <!-- Products dynamically generated -->
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section class="cart" id="cart">
+    <h2>Your Cart</h2>
+    <div class="cart-items">
+      <p>No items in your cart.</p>
+    </div>
+    <div class="cart-summary">
+      <p>Total Items: <span id="total-items">0</span></p>
+      <p>Total Price: $<span id="total-price">0.00</span></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Online Shop. All rights reserved.</p>
+    <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
